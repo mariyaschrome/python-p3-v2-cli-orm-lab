@@ -93,7 +93,7 @@ def create_employee():
     job_title = input("Enter the employee's job title: ")
     department_id = int(input("Enter the employee's department id: "))
     try:
-        employee = Employee(None, name, job_title, department_id)
+        employee = Employee(name, job_title, department_id)
         employee.save()
         print(f"Success: {employee}")
     except Exception as e:
